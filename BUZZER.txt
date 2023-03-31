@@ -1,0 +1,18 @@
+int BUZZER=D6;
+
+void setup() {
+  pinMode(BUZZER,OUTPUT);
+
+}
+
+void loop() {
+  //tone(BUZZER, 6000,250);
+  /*digitalWrite(BUZZER,HIGH);
+  delay(5000);
+  digitalWrite(BUZZER,LOW);
+  delay(5000);*/
+  tone(BUZZER, 1000); // Send 1KHz sound signal...
+  delay(1000);        // ...for 1 sec
+  noTone(BUZZER);     // Stop sound...
+  delay(1000);        // ...for 1sec
+}
